@@ -1,5 +1,8 @@
 // Function to practice forEach
 function logEachAnimal(animals) {
+  animals.array.forEach((element) => {
+    console.log(element.length);
+  });
   // Example: animals.forEach(animal => console.log(animal));
 }
 
