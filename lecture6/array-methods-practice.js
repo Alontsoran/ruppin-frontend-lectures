@@ -1,33 +1,31 @@
 // Function to practice forEach
 function logEachAnimal(animals) {
-  animals.array.forEach((element) => {
-    console.log(element.length);
-  });
-  // Example: animals.forEach(animal => console.log(animal));
+  animals.forEach((animal) => console.log(animal.length));
+  animals.forEach((animal) => console.log(animal));
 }
 
 // Function to practice map
 function getAnimalNameLengths(animals) {
   // Your map logic here
+  console.log(animals.map((animal) => animal));
+  return animals.map((animal) => animal.length);
+
   // Example: return animals.map(animal => animal.length);
 }
 
 // Function to practice filter
 function filterLandAnimals(animals) {
-  // Your filter logic here
-  // Example: return animals.filter(animal => animal !== 'Fish');
+  return animals.filter((animal) => animal !== "Lion");
 }
 
 // Function to practice find
 function findFirstLargeAnimal(animals) {
-  // Your find logic here
-  // Example: return animals.find(animal => animal.length > 5);
+  return animals.find((animal) => animal.length > 4);
 }
 
 // Function to practice reduce
 function getTotalNumberOfLegs(animals) {
-  // Your reduce logic here
-  // Example: return animals.reduce((total, animal) => total + 4, 0); // assuming each animal has 4 legs
+  return animals.reduce((total, animal) => total, 4);
 }
 
 // Example array of animals to test the functions
